@@ -16,8 +16,17 @@ header {
 }
 
 /* Estilo del Título en el Encabezado */
-header h1 {
+/* header h1 {
     margin: 0;
+} */
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+
 }
 
 /* Estilo de las Opciones del Encabezado */
