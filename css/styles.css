@@ -1,24 +1,23 @@
+*{
+    margin: 0;
+}
 
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(#333433, #ccc);
+    background: linear-gradient(#f5efe9, #ccc);
 }
 
 /* Estilo del Encabezado */
 header {
-    background-color: #333;
+    background-color: #f5efe9;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    color: #333;
 }
-
-/* Estilo del Título en el Encabezado */
-/* header h1 {
-    margin: 0;
-} */
 
 header .logo
 {
@@ -32,10 +31,11 @@ header .logo
 /* Estilo de las Opciones del Encabezado */
 nav {
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
@@ -43,75 +43,200 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #ee5656;
+    border-radius: 10%;
 }
 
 /* Sección de Bienvenida */
 .welcome-section {
-    height: 100vh;
-    background: url('background.jpg') center/cover no-repeat;
+    height: auto;
+    background: url('../imgs/lines-removebg.png') center/cover no-repeat; /* Establece la imagen de fondo */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+    flex-wrap: wrap;
     text-align: center;
+    padding: 30px;
 }
 
-.welcome-section h1 {
-    font-size: 3em;
-}
-/* Sección de Bienvenida */
-.welcome-section {
-    height: 100vh;
-    /* background: url('background.jpg') center/cover no-repeat; */
+.title {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
+    flex-wrap: wrap;
+    font-size: 5em;
+    margin-top: 0;
+    width: 80%; 
+    text-align: left;
+    color: #333;
 }
 
-.welcome-section h1 {
-    font-size: 3em;
+.welcome-left h1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 6em;
+    margin-top: 0;
+    width: 50%; 
+    text-align: left;
+    color: #333;
 }
+
+.welcome-left-text-container-1,
+.welcome-left-text-container-2{
+    background-color: #edd4bb;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-top: 0px;
+    padding: 20px;
+    padding-top: 5px;
+    width: 45%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.new-feature {
+    background-color: #f6993c;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    width: 60%; /* Ajustamos el ancho del texto al 60% */
+    text-align: left;
+    color: #333;
+}
+
 
 /* Sección de Características con Efecto Parallax */
-.features-section {
-    height: 500px;
-    /* background: url('parallax-background.jpg') center/cover no-repeat fixed; */
+.welcome-section-2,
+.welcome-section-2-2 {
+    height: auto; /* Cambiado de 200px a auto para permitir contenido dinámico */
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #333;
     text-align: center;
+    padding: 20px;
 }
 
-.features-section h2 {
-    font-size: 2em;
+
+.welcome-section-2-top {
+    font-size: 1.5em; 
+    margin-left: 5%; 
+    margin-right: 40%;
+    text-align: left;
+}
+
+.welcome-section-2-2-bottom-left,
+.welcome-section-2-2-bottom-right {
+    /* height: absolute; */
+    width: 48%;
+    /* margin: 10px 0; */
+    /* justify-content: space-between; */
+    margin: 0.5%;
+    padding: 25px;
+    background-color: #f5efe9;
+}
+
+.welcome-section-2-2 p {
+    font-size: 1.2em;
+    width: 60%; 
+    text-align: center;
+    color: #333;
+    margin-left: 20%;
 }
 
 /* Sección de Contacto */
-.contact-section {
-    height: 100vh;
+.welcome-section-3-1{
+    height: auto;
     background: #333;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    text-align: center;
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
-.contact-section h2 {
-    font-size: 2em;
+.welcome-section-3-1 button{
+    background-color: #f5efe9;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Estilo del Pie de Página */
-.footer {
-    background-color: #333;
+.welcome-section-3-1 p {
+    font-size: 1.2em;
+}
+
+/* footer section */
+.footer-section {
+    background-color: black;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    position: fixed;
+    padding: 30px;
     bottom: 0;
-    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px; /* Ajusta el margen según tus preferencias */
+}
+
+
+.cisa-logo img{
+    max-width: 200px;
+    height: auto;
+    display: flex;
+    padding-top: 0px;
+    /* justify-content: space-between; */
+}
+
+/* .footer-links {
+    margin: 20px; 
+} */
+
+.no-bullets{
+    list-style-type: none;
+}
+
+.no-bullets a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    nav a {
+        font-size: 0.9em; /* Ajuste del tamaño de la fuente para pantallas más pequeñas */
+        padding: 8px 16px; /* Ajuste del relleno */
+    }
+
+    .welcome-section h1 {
+        font-size: 1.5em; /* Ajuste del tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .welcome-section img {
+        width: 100%; /* Cambiado de 40% a 100% para pantallas más pequeñas */
+    }
+
+    .welcome-section-2-top {
+        font-size: 1.2em; /* Ajuste del tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .welcome-section-2-2 p {
+        font-size: 0.9em; /* Ajuste del tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .welcome-section-3-1 button {
+        font-size: 0.9em; /* Ajuste del tamaño de la fuente para pantallas más pequeñas */
+        padding: 8px 16px; /* Ajuste del relleno */
+    }
 }
